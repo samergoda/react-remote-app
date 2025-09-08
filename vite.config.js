@@ -24,10 +24,21 @@ export default defineConfig({
     }),
   ],
   build: {
-    modulePreload: false,
-    target: "esnext",
-    minify: true,
-    cssCodeSplit: false,
+    rollupOptions: {
+      output: {
+        // format: "iife", // Use Immediately Invoked Function Expression
+        // entryFileNames: "search-plugin.js", // Name of the output file
+        // chunkFileNames: "chunks/[name].js", // Name for chunk files if used
+        // assetFileNames: "[name].[ext]", // Keep asset file names
+        manualChunks: {
+          vendor: ["react", "react-dom"],
+        },
+      },
+    },
+    // modulePreload: false,
+    // target: "esnext",
+    // minify: true,
+    // cssCodeSplit: false,
   },
   preview: {
     port: 5001,
