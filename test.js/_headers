@@ -1,0 +1,9 @@
+/assets/_
+Access-Control-Allow-Origin: _
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Authorization
+
+/_
+Access-Control-Allow-Origin: _
+Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS
+Access-Control-Allow-Headers: Content-Type, Authorization
